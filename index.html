@@ -1,12 +1,346 @@
 <!DOCTYPE html>
-<html lang="pt-br">
-    <head>
-        <title>Indie Hub</title>
-        <link rel="stylesheet" href="css/IndieHub.css">
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    </head>
-    <body>
-        <script src="js/IndieHub.js"></script>
-    </body>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Indie Hub - Portal de Jogos Indie</title>
+    <link rel="stylesheet" href="css/IndieHub.css">
+    <script src="https://kit.fontawesome.com/778d3033d0.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <!-- HEADER -->
+    <header class="header">
+        <div class="container">
+            <div class="header-content">
+                <button class="menu-btn">
+                    <i class="fa-solid fa-bars"></i>
+                </button>
+                
+                <div class="logo">
+                    <h1>INDIE HUB</h1>
+                </div>
+
+                <nav class="main-nav">
+                    <a href="#home">Início</a>
+                    <a href="#news">Notícias</a>
+                    <a href="#entertainment">Entretenimento</a>
+                    <a href="#forum">Fórum</a>
+                </nav>
+
+                <div class="header-actions">
+                    <div class="search-container">
+                        <input type="text" placeholder="Buscar no Indie Hub..." class="search-input">
+                        <i class="fa-solid fa-magnifying-glass search-icon"></i>
+                    </div>
+                    <button class="login-btn"><i class="fa-solid fa-right-to-bracket"></i> Login</button>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- HERO BANNER -->
+    <section class="hero">
+        <div class="hero-content">
+            <div class="hero-overlay">
+                <span class="hero-tag">DESTAQUE</span>
+                <h2 class="hero-title">Os Jogos Indie Mais Aguardados de 2025</h2>
+                <p class="hero-description">Descubra os títulos independentes que prometem revolucionar a indústria dos games este ano</p>
+                <button class="hero-btn">Ler Mais</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- INTRODUÇÃO -->
+    <section class="intro">
+        <div class="container">
+            <h2>Bem-vindo ao Indie Hub</h2>
+            <p>Sua fonte definitiva para tudo sobre jogos indie. Notícias, reviews, tutoriais e uma comunidade apaixonada por jogos independentes.</p>
+        </div>
+    </section>
+
+    <!-- NOTÍCIAS POPULARES -->
+    <section class="popular-news">
+        <div class="container">
+            <div class="section-header">
+                <h2>Notícias Populares</h2>
+                <div class="dropdown">
+                    <button class="dropdown-btn">Mais Recentes <i class="fa-solid fa-chevron-down"></i></button>
+                </div>
+            </div>
+
+            <div class="news-grid">
+                <article class="news-card featured">
+                    <div class="card-image"></div>
+                    <div class="card-content">
+                        <span class="card-tag">NOTÍCIA</span>
+                        <h3>Hollow Knight: Silksong recebe nova atualização dos desenvolvedores</h3>
+                        <p>Team Cherry finalmente compartilha novidades sobre o aguardado título</p>
+                        <div class="card-meta">
+                            <span class="date">25 Out 2025</span>
+                            <div class="card-actions">
+                                <span><i class="fa-solid fa-heart"></i> 234</span>
+                                <span><i class="fa-solid fa-comment"></i> 89</span>
+                                <span><i class="fa-solid fa-share-nodes"></i> 45</span>
+                            </div>
+                        </div>
+                    </div>
+                </article>
+
+                <article class="news-card">
+                    <div class="card-image"></div>
+                    <div class="card-content">
+                        <span class="card-tag">NOTÍCIA</span>
+                        <h3>Celeste recebe DLC gratuito surpresa</h3>
+                        <p>Novo conteúdo adiciona 20 níveis desafiadores</p>
+                        <div class="card-meta">
+                            <span class="date">24 Out 2025</span>
+                            <div class="card-actions">
+                                <span><i class="fa-solid fa-heart"></i> 189</span>
+                                <span><i class="fa-solid fa-comment"></i> 67</span>
+                                <span><i class="fa-solid fa-share-nodes"></i> 32</span>
+                            </div>
+                        </div>
+                    </div>
+                </article>
+
+                <article class="news-card">
+                    <div class="card-image"></div>
+                    <div class="card-content">
+                        <span class="card-tag">LANÇAMENTO</span>
+                        <h3>Stardew Valley multiplataforma confirmado</h3>
+                        <p>Jogue com amigos em qualquer dispositivo</p>
+                        <div class="card-meta">
+                            <span class="date">23 Out 2025</span>
+                            <div class="card-actions">
+                                <span><i class="fa-solid fa-heart"></i> 312</span>
+                                <span><i class="fa-solid fa-comment"></i> 124</span>
+                                <span><i class="fa-solid fa-share-nodes"></i> 78</span>
+                            </div>
+                        </div>
+                    </div>
+                </article>
+
+                <article class="news-card">
+                    <div class="card-image"></div>
+                    <div class="card-content">
+                        <span class="card-tag">NOTÍCIA</span>
+                        <h3>Indie World Showcase anuncia data</h3>
+                        <p>Evento digital revelará novos jogos indie</p>
+                        <div class="card-meta">
+                            <span class="date">22 Out 2025</span>
+                            <div class="card-actions">
+                                <span><i class="fa-solid fa-heart"></i> 156</span>
+                                <span><i class="fa-solid fa-comment"></i> 43</span>
+                                <span><i class="fa-solid fa-share-nodes"></i> 28</span>
+                            </div>
+                        </div>
+                    </div>
+                </article>
+            </div>
+        </div>
+    </section>
+
+    <!-- PORTAL DE NOTÍCIAS -->
+    <section class="news-portal" id="news">
+        <div class="container">
+            <div class="section-header">
+                <h2>Portal de Notícias</h2>
+                <div class="filters">
+                    <button class="filter-btn active">Todas</button>
+                    <button class="filter-btn">Lançamentos</button>
+                    <button class="filter-btn">Atualizações</button>
+                    <button class="filter-btn">Eventos</button>
+                </div>
+            </div>
+
+            <div class="news-list">
+                <article class="news-item">
+                    <div class="news-item-image"></div>
+                    <div class="news-item-content">
+                        <span class="card-tag red">DESTAQUE</span>
+                        <h3>Hades 2 entra em Early Access com grande sucesso</h3>
+                        <p>Supergiant Games lança sequência aclamada pela crítica e público. O jogo já acumula milhares de jogadores simultâneos e reviews extremamente positivas.</p>
+                        <div class="tags">
+                            <span class="tag">#noticias</span>
+                            <span class="tag">#lançamentos</span>
+                            <span class="tag">#hades2</span>
+                        </div>
+                        <div class="card-meta">
+                            <span class="author">Por João Silva</span>
+                            <span class="date">20 Out 2025</span>
+                        </div>
+                    </div>
+                </article>
+
+                <article class="news-item">
+                    <div class="news-item-image"></div>
+                    <div class="news-item-content">
+                        <span class="card-tag">NOTÍCIA</span>
+                        <h3>Promoção de Halloween traz descontos de até 80%</h3>
+                        <p>Steam, GOG e Epic Games Store oferecem ofertas incríveis em jogos indie de terror e aventura durante o evento sazonal.</p>
+                        <div class="tags">
+                            <span class="tag">#promoções</span>
+                            <span class="tag">#halloween</span>
+                        </div>
+                        <div class="card-meta">
+                            <span class="author">Por Maria Santos</span>
+                            <span class="date">19 Out 2025</span>
+                        </div>
+                    </div>
+                </article>
+            </div>
+        </div>
+    </section>
+
+    <!-- ENTRETENIMENTO -->
+    <section class="entertainment" id="entertainment">
+        <div class="container">
+            <h2>Entretenimento</h2>
+            
+            <div class="entertainment-nav">
+                <a href="#videos" class="ent-link active">Vídeos</a>
+                <a href="#tutorials" class="ent-link">Tutoriais</a>
+                <a href="#reviews" class="ent-link">Reviews</a>
+                <a href="#deals" class="ent-link">Promoções</a>
+            </div>
+
+            <div class="entertainment-grid">
+                <article class="ent-card">
+                    <div class="ent-card-image video">
+                        <i class="fa-solid fa-circle-play play-icon"></i>
+                        <span class="duration">15:34</span>
+                    </div>
+                    <div class="card-content">
+                        <span class="card-tag purple">VÍDEO</span>
+                        <h3>Top 10 Jogos Indie de 2025</h3>
+                        <p>Nossa seleção dos melhores lançamentos indie do ano</p>
+                    </div>
+                </article>
+
+                <article class="ent-card">
+                    <div class="ent-card-image"></div>
+                    <div class="card-content">
+                        <span class="card-tag blue">TUTORIAL</span>
+                        <h3>Como começar em Terraria</h3>
+                        <p>Guia completo para iniciantes</p>
+                    </div>
+                </article>
+
+                <article class="ent-card">
+                    <div class="ent-card-image"></div>
+                    <div class="card-content">
+                        <span class="card-tag green">REVIEW</span>
+                        <h3>Pizza Tower - Review Completa</h3>
+                        <p>Analisamos este frenético platformer indie</p>
+                    </div>
+                </article>
+
+                <article class="ent-card">
+                    <div class="ent-card-image"></div>
+                    <div class="card-content">
+                        <span class="card-tag orange">PROMOÇÃO</span>
+                        <h3>Bundle Humble com 12 jogos indie</h3>
+                        <p>Pague o quanto quiser e ajude instituições</p>
+                    </div>
+                </article>
+            </div>
+        </div>
+    </section>
+
+    <!-- FÓRUM PREVIEW -->
+    <section class="forum-preview" id="forum">
+        <div class="container">
+            <div class="section-header">
+                <h2>Fórum da Comunidade</h2>
+                <button class="view-all-btn">Ver Todos os Tópicos</button>
+            </div>
+
+            <div class="forum-notice">
+                <p><i class="fa-solid fa-circle-info"></i> Faça login para participar das discussões e criar seus próprios tópicos</p>
+            </div>
+
+            <div class="forum-posts">
+                <article class="forum-post">
+                    <div class="post-avatar"></div>
+                    <div class="post-content">
+                        <div class="post-header">
+                            <h3>Qual o melhor jogo indie de plataforma?</h3>
+                            <span class="post-tag">DISCUSSÃO</span>
+                        </div>
+                        <p>Estou procurando recomendações de jogos indie de plataforma. Já joguei Celeste e Hollow Knight, o que vocês sugerem?</p>
+                        <div class="post-meta">
+                            <span class="author">Por GameMaster99</span>
+                            <span class="replies"><i class="fa-solid fa-message"></i> 45 respostas</span>
+                            <span class="date">Há 2 horas</span>
+                        </div>
+                    </div>
+                </article>
+
+                <article class="forum-post">
+                    <div class="post-avatar"></div>
+                    <div class="post-content">
+                        <div class="post-header">
+                            <h3>Sugestão: Adicionar seção de indie brasileiro</h3>
+                            <span class="post-tag feedback">FEEDBACK</span>
+                        </div>
+                        <p>Seria legal ter uma seção dedicada aos jogos indie desenvolvidos no Brasil. Temos muitos talentos nacionais!</p>
+                        <div class="post-meta">
+                            <span class="author">Por IndieLovers</span>
+                            <span class="replies"><i class="fa-solid fa-message"></i> 23 respostas</span>
+                            <span class="date">Há 5 horas</span>
+                        </div>
+                    </div>
+                </article>
+            </div>
+        </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>INDIE HUB</h3>
+                    <p>Sua fonte definitiva para tudo sobre jogos indie</p>
+                </div>
+
+                <div class="footer-section">
+                    <h4>Navegação</h4>
+                    <ul>
+                        <li><a href="#home">Início</a></li>
+                        <li><a href="#news">Notícias</a></li>
+                        <li><a href="#entertainment">Entretenimento</a></li>
+                        <li><a href="#forum">Fórum</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-section">
+                    <h4>Redes Sociais</h4>
+                    <div class="social-links">
+                        <a href="#" class="social-link"><i class="fa-brands fa-x-twitter"></i> Twitter</a>
+                        <a href="#" class="social-link"><i class="fa-brands fa-discord"></i> Discord</a>
+                        <a href="#" class="social-link"><i class="fa-brands fa-youtube"></i> YouTube</a>
+                        <a href="#" class="social-link"><i class="fa-brands fa-instagram"></i> Instagram</a>
+                    </div>
+                </div>
+
+                <div class="footer-section">
+                    <h4>Informações</h4>
+                    <ul>
+                        <li><a href="#">Sobre Nós</a></li>
+                        <li><a href="#">Contato</a></li>
+                        <li><a href="#">Política de Privacidade</a></li>
+                        <li><a href="#">Termos de Uso</a></li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="footer-bottom">
+                <p>&copy; 2025 Indie Hub. Todos os direitos reservados. Desenvolvido por Rafael Duclos</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/indiehub.js"></script>
+</body>
 </html>
